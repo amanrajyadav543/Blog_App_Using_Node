@@ -30,7 +30,7 @@ router.route("/add/cover/Image/:id").patch(middleware.checkToken,upload.single("
         if(err)return res.json(err);
         return res.json(result);
        }
-    )//fgnfgjnjnvj
+    )//fgnfgjnjnvjgitgit
 })
 
 router.route("/Add").post(middleware.checkToken,(req, res)=>{
@@ -80,3 +80,5 @@ router.route("/delete/:id").delete(middleware.checkToken, (req,res)=>{
 });
 
 module.exports= router;
+
+///check
