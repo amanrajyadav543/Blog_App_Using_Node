@@ -92,7 +92,7 @@ router.route("/login").post((req, res) => {
 
 
 
-router.route("/register").post((req, res) => {
+router.route("/register").post(middleware.checkToken,(req, res) => {
     const user = new User({
         username: req.body.username,
         password: req.body.password,

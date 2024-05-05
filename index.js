@@ -19,6 +19,4 @@ app.use("/profile", profileRouter);
 app.use("/blogPost",blogRoute);
 // Start the server
 
-
-
 app.listen(PORT, () => console.log(`Your server is running on port ${PORT}`));
